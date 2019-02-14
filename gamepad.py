@@ -13,5 +13,5 @@ while True:
     pos1 = sdl2.SDL_JoystickGetAxis(joystick,1)
     pos2 = sdl2.SDL_JoystickGetAxis(joystick,3)
     if (pos1 != last_pos1 or pos2 != last_pos2):
-        print(f'{pos1} , {pos2}')
+        print(str(pos1) + ',' + str(pos2))
         last_pos1,last_pos2 = pos1, pos2
